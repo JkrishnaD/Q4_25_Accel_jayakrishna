@@ -21,8 +21,15 @@ custom-panic = []
 
 
 [dependencies]
-anchor-lang = "0.32.0"
-
+anchor-lang = {version="0.32.0" ,features = ["interface-instructions","init-if-needed"] }
+anchor-spl = "0.32.1"
+vault-whitelist = {path = "../vault-whitelist",features = ["no-entrypoint"]}
+# Library for easy management of 8-byte discriminators
+spl-discriminator = "0.4"
+# Library defining a generic state interface to encode additional required accounts for an instruction, using Type-Length-Value structures
+spl-tlv-account-resolution = "0.10.0"
+# Library with helper to resolve additional accounts
+spl-transfer-hook-interface = "0.10.0"
 
 [lints.rust]
 unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"))'] }
