@@ -1,0 +1,3 @@
+[submodule "pinocchio-escrow"]
+	path = pinocchio-escrow
+	url = https://github.com/JkrishnaD/pinocchio-escrow.git
