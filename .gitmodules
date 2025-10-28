@@ -1,3 +1,6 @@
 [submodule "pinocchio-escrow"]
 	path = pinocchio-escrow
 	url = https://github.com/JkrishnaD/pinocchio-escrow.git
+[submodule "pinocchio-fundraiser"]
+	path = pinocchio-fundraiser
+	url = https://github.com/JkrishnaD/pinocchio-fundraiser.git
